@@ -118,6 +118,7 @@
 		8895C34C18A3BA6B000B7F28 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8895C34B18A3BA6B000B7F28 /* MediaPlayer.framework */; };
 		8895C34E18A3BA70000B7F28 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8895C34D18A3BA70000B7F28 /* Security.framework */; };
 		8895C35018A3BA78000B7F28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8895C34F18A3BA78000B7F28 /* SystemConfiguration.framework */; };
+		BC2E7A3418DC67DD00A90264 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2E7A3318DC67DD00A90264 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -275,7 +276,6 @@
 		7FEE7672181ED867000F684A /* OvershareKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OvershareKit.h; sourceTree = "<group>"; };
 		7FEE7674181ED867000F684A /* OvershareKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OvershareKit.m; sourceTree = "<group>"; };
 		7FEE767B181ED867000F684A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7FEE767E181ED867000F684A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7FEE77DE181ED8FE000F684A /* 1Password-Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1Password-Icon-120.png"; sourceTree = "<group>"; };
 		7FEE77DF181ED8FE000F684A /* 1Password-Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1Password-Icon-76.png"; sourceTree = "<group>"; };
 		7FEE77E0181ED8FE000F684A /* 1Password-Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1Password-Icon-76@2x.png"; sourceTree = "<group>"; };
@@ -490,6 +490,7 @@
 		8895C34B18A3BA6B000B7F28 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		8895C34D18A3BA70000B7F28 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8895C34F18A3BA78000B7F28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BC2E7A3318DC67DD00A90264 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2ED4093BD3864F639BD9AB1 /* GooglePlus-Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GooglePlus-Icon-76.png"; sourceTree = "<group>"; };
 		F2ED4477173538D750DC8F83 /* GooglePlus-Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GooglePlus-Icon-29.png"; sourceTree = "<group>"; };
 		F2ED44D42685E0B33F979699 /* GooglePlus-Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GooglePlus-Icon-29@2x.png"; sourceTree = "<group>"; };
@@ -514,6 +515,7 @@
 				8895C34218A3BA48000B7F28 /* AddressBook.framework in Frameworks */,
 				8895C32918A3B890000B7F28 /* GoogleOpenSource.framework in Frameworks */,
 				8895C32A18A3B890000B7F28 /* GooglePlus.framework in Frameworks */,
+				BC2E7A3418DC67DD00A90264 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,7 +594,7 @@
 				8895C32818A3B890000B7F28 /* GooglePlus.framework */,
 				7FEE766D181ED867000F684A /* Foundation.framework */,
 				7FEE767B181ED867000F684A /* XCTest.framework */,
-				7FEE767E181ED867000F684A /* UIKit.framework */,
+				BC2E7A3318DC67DD00A90264 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -980,7 +982,7 @@
 		7FEE7662181ED867000F684A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Overshare Kit";
 			};
 			buildConfigurationList = 7FEE7665181ED867000F684A /* Build configuration list for PBXProject "OvershareKit" */;
@@ -1106,7 +1108,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1144,7 +1145,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
